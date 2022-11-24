@@ -67,19 +67,19 @@ sqrtj:=sqrt(j);
 //file section
 Assign(NumberFile,'numbers.txt');
 Rewrite(NumberFile);
-writeln(NumberFile,'     Original    Sqaure    Square Rooted');
-writeln(NumberFile,'1.','   ',a,'    ',sqa,'    ',sqrta);
-writeln(NumberFile,'2.','   ',b,'    ',sqb,'    ',sqrtb);
-writeln(NumberFile,'3.','   ',c,'    ',sqc,'    ',sqrtc);
-writeln(NumberFile,'4.','   ',d,'    ',sqd,'    ',sqrtd);
-writeln(NumberFile,'5.','   ',e,'    ',sqe,'    ',sqrte);
-writeln(NumberFile,'6.','   ',f,'    ',sqf,'    ',sqrtf);
-writeln(NumberFile,'7.','   ',g,'    ',sqg,'    ',sqrtg);
-writeln(NumberFile,'8.','   ',h,'    ',sqh,'    ',sqrth);
-writeln(NumberFile,'9.','   ',i,'    ',sqi,'    ',sqrti);
-writeln(NumberFile,'10.','   ',j,'    ',sqj,'    ',sqrtj);
+writeln(NumberFile,'Original    Sqaure    Square Rooted');
+writeln(NumberFile,a,'    ',sqa,'    ',sqrta);
+writeln(NumberFile,b,'    ',sqb,'    ',sqrtb);
+writeln(NumberFile,c,'    ',sqc,'    ',sqrtc);
+writeln(NumberFile,d,'    ',sqd,'    ',sqrtd);
+writeln(NumberFile,e,'    ',sqe,'    ',sqrte);
+writeln(NumberFile,f,'    ',sqf,'    ',sqrtf);
+writeln(NumberFile,g,'    ',sqg,'    ',sqrtg);
+writeln(NumberFile,h,'    ',sqh,'    ',sqrth);
+writeln(NumberFile,i,'    ',sqi,'    ',sqrti);
+writeln(NumberFile,j,'    ',sqj,'    ',sqrtj);
 reset(NumberFile);
-readln(NumberFile,a);
+readln(NumberFile,a,sqa,sqrta);
 closefile(NumberFile);
 
 
