@@ -9,13 +9,13 @@
         <Filename Value="whydowehavetodothis.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="59"/>
-        <CursorPos X="25" Y="81"/>
+        <TopLine Value="64"/>
+        <CursorPos X="83" Y="88"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="6">
+    <JumpHistory HistoryIndex="9">
       <Position>
         <Filename Value="whydowehavetodothis.lpr"/>
         <Caret Line="17" Column="98" TopLine="10"/>
@@ -43,6 +43,18 @@
       <Position>
         <Filename Value="whydowehavetodothis.lpr"/>
         <Caret Line="81" Column="25" TopLine="59"/>
+      </Position>
+      <Position>
+        <Filename Value="whydowehavetodothis.lpr"/>
+        <Caret Line="83" TopLine="61"/>
+      </Position>
+      <Position>
+        <Filename Value="whydowehavetodothis.lpr"/>
+        <Caret Line="87" Column="11" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="whydowehavetodothis.lpr"/>
+        <Caret Line="85" Column="7" TopLine="69"/>
       </Position>
     </JumpHistory>
     <RunParams>

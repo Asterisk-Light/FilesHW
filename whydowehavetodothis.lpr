@@ -2,10 +2,11 @@ program whydowehavetodothis;
 //Anthony I hate you for this
 
 var
-  NumberFile:Text;
+  NumberFile,NumberFile2:Text;
   a,b,c,d,e,f,g,h,i,j:integer;
   sqa,sqb,sqc,sqd,sqe,sqf,sqg,sqh,sqi,sqj:integer;
   sqrta,sqrtb,sqrtc,sqrtd,sqrte,sqrtf,sqrtg,sqrth,sqrti,sqrtj:real;
+  DataValue:string;
 
 {
   sq- prefix means the squared value of the variable
@@ -67,25 +68,50 @@ sqrtj:=sqrt(j);
 //file section
 Assign(NumberFile,'numbers.txt');
 Rewrite(NumberFile);
-writeln(NumberFile,'     Original    Sqaure    Square Rooted');
-writeln(NumberFile,'1.','   ',a,'    ',sqa,'    ',sqrta);
-writeln(NumberFile,'2.','   ',b,'    ',sqb,'    ',sqrtb);
-writeln(NumberFile,'3.','   ',c,'    ',sqc,'    ',sqrtc);
-writeln(NumberFile,'4.','   ',d,'    ',sqd,'    ',sqrtd);
-writeln(NumberFile,'5.','   ',e,'    ',sqe,'    ',sqrte);
-writeln(NumberFile,'6.','   ',f,'    ',sqf,'    ',sqrtf);
-writeln(NumberFile,'7.','   ',g,'    ',sqg,'    ',sqrtg);
-writeln(NumberFile,'8.','   ',h,'    ',sqh,'    ',sqrth);
-writeln(NumberFile,'9.','   ',i,'    ',sqi,'    ',sqrti);
-writeln(NumberFile,'10.','   ',j,'    ',sqj,'    ',sqrtj);
-reset(NumberFile);
-readln(NumberFile,a);
+writeln(NumberFile,'     Original ');
+writeln(NumberFile,'1.','   ',a);
+writeln(NumberFile,'2.','   ',b);
+writeln(NumberFile,'3.','   ',c);
+writeln(NumberFile,'4.','   ',d);
+writeln(NumberFile,'5.','   ',e);
+writeln(NumberFile,'6.','   ',f);
+writeln(NumberFile,'7.','   ',g);
+writeln(NumberFile,'8.','   ',h);
+writeln(NumberFile,'9.','   ',i);
+writeln(NumberFile,'10.','   ',j);
 closefile(NumberFile);
+
+//printing to another file
+Assign(NumberFile2,'numbers2.txt');
+Rewrite(NumberFile2);
+writeln(NumberFile2,'     Original     square      sqaure rooted');
+writeln(NumberFile2,'1.','   ',a,'    ',sqa,'    '.sqrta:5:2);
+writeln(NumberFile2,'2.','   ',b,'    ',sqb,'    ',sqrtb:5:2);
+writeln(NumberFile2,'3.','   ',c,'    ',sqc,'    ',sqrtc:5:2);
+writeln(NumberFile2,'4.','   ',d,'    ',sqd,'    ',sqrtd:5:2);
+writeln(NumberFile2,'5.','   ',e,'    ',sqe,'    ',sqrte:5:2);
+writeln(NumberFile2,'6.','   ',f,'    ',sqf,'    ',sqrtf:5:2);
+writeln(NumberFile2,'7.','   ',g,'    ',sqg,'    ',sqrtg:5:2);
+writeln(NumberFile2,'8.','   ',h,'    ',sqh,'    ',sqrth:5:2);
+writeln(NumberFile2,'9.','   ',i,'    ',sqi,'    ',sqrti:5:2);
+writeln(NumberFile2,'10.','   ',j,'    ',sqj,'    ',sqrtj:5:2);
+closefile(NumberFile2);
+
+//reading the file and printing the values
+Reset(NumberFile2);
+repeat
+  readln(NumberFile2,DataValue);
+  writeln(DataValue);
+until Eof(NumberFile2);
+closefile(NumberFile2);
+readln;
+
 
 
 
 end.
 
+ 
  
  
  
